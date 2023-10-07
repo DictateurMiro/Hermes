@@ -1,2 +1,1 @@
-# reverse-shell
-Reverse Shell made in python with the heart
+Je suis entrain de faire le README.md
