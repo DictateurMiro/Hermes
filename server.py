@@ -1,6 +1,6 @@
 import socket
 import os
-import keyboard # Module a installer
+import keyboard # Module a installerr
 
 def get_user_and_computer_names():
     nom_user = os.getlogin() if os.name == 'posix' else os.environ.get('USERNAME') or "Admin"
