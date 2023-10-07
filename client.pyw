@@ -5,8 +5,6 @@ import time
 import subprocess
 import sys
 
-e
-
 def install_asyncio():
     try:
         import asyncio
