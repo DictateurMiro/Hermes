@@ -5,22 +5,19 @@ import time
 import subprocess
 import sys
 
-def install_asyncio():
-    try:
-        import asyncio
-    except ImportError:
-        commands = [
-            ['pip', 'install', 'asyncio'],
-            [sys.executable, '-m', 'pip', 'install', 'asyncio'],
-        ]
-        for command in commands:
-            try:
-                subprocess.run(command, check=True)
-                break
-            except subprocess.CalledProcessError:
-                print(" ")
-
-install_asyncio()
+try:
+    import asyncio
+except ImportError:
+    commands = [
+        ['pip', 'install', 'asyncio'],
+        [sys.executable, '-m', 'pip', 'install', 'asyncio'],
+    ]
+    for command in commands:
+        try:
+            subprocess.run(command, check=True)
+            break
+        except subprocess.CalledProcessError:
+            print(" ")
 
 async def execute_command(command):
     try:
