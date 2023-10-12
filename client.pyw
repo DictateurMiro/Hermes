@@ -2,7 +2,6 @@ import socket
 import subprocess
 import os
 import time
-import subprocess
 import sys
 
 try:
