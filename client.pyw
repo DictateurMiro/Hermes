@@ -3,7 +3,7 @@ import subprocess
 import os
 import time
 import sys
-📋
+
 try:
     import asyncio
 except ImportError:
