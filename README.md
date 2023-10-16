@@ -78,9 +78,8 @@ This project is licensed under the MIT License
 
 ```diff
 
-v1 ⋮ 11/10/2023
-+ Added Main Scripts
-+ Cleaned up Code
+v1.1 ⋮ 16/10/2023
++ Added a video to demonstrate
 ```
 
 <p align="center">
