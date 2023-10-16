@@ -2,7 +2,7 @@
 <h1 align='center'>Reverse Shell 🧨</h1>
 
 <p align='center'>
-  <b>Star ⭐ if you want more</b><br>e
+  <b>Star ⭐ if you want more</b><br>
 </p>
 
 <p align="center">
