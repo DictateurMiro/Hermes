@@ -58,7 +58,7 @@ Contact :
 ## 🎉 Upcoming / enhancements
 
 ```sh-session
-- Add addons (like auto add to stratup menu)
+- Add 'download' command to download file from client 
 - Working with linux host
 ```
 
@@ -78,6 +78,9 @@ This project is licensed under the MIT License
 ## 💭 ChangeLog
 
 ```diff
+
+v1.2 ⋮ 20/10/2023
++ Added 'upload' command to upload in the download directory of the client
 
 v1.1 ⋮ 16/10/2023
 + Added a video to demonstrate
