@@ -46,7 +46,6 @@ Contact :
 
 ```sh-session
 > Download zip file (git clone https://github.com/DictateurMiro/reverse-shell.git)
-> Install requirements (keyboard)
 > Open port 13037 on your vps
 > Run server.py
 > Send client.pyw (with the ip in the file) to your victim
@@ -81,6 +80,7 @@ This project is licensed under the MIT License
 
 v1.2 ⋮ 20/10/2023
 + Added 'upload' command to upload in the download directory of the client
+- Remove 'keyboard' module on server because it's useless
 
 v1.1 ⋮ 16/10/2023
 + Added a video to demonstrate
