@@ -29,6 +29,7 @@ Contact :
 ✔ Automatic connection to the server
 ✔ Automatic install module for client
 ✔ Beautiful UI
+✔ Download and Upload file
 ```
 ---
 
@@ -57,7 +58,6 @@ Contact :
 ## 🎉 Upcoming / enhancements
 
 ```sh-session
-- Add 'download' command to download file from client 
 - Working with linux host
 ```
 
@@ -77,6 +77,9 @@ This project is licensed under the MIT License
 ## 💭 ChangeLog
 
 ```diff
+
+v1.3 ⋮ 21/10/2023
++ Added 'download' command to download file from the client to the server download directory
 
 v1.2 ⋮ 20/10/2023
 + Added 'upload' command to upload in the download directory of the client
