@@ -92,6 +92,9 @@ This project is licensed under the MIT License
 
 ```diff
 
+v1.3.1 ⋮ 23/10/2023
++ Added (Useful command) in README.md to explain the commands and how to use them
+
 v1.3 ⋮ 21/10/2023
 + Added 'download' command to download file from the client to the server download directory
 
