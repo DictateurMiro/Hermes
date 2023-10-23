@@ -5,7 +5,7 @@
   <b>Star ⭐ if you want more</b><br>
 </p>
 
-<p align="center">e
+<p align="center">
   <img src="https://img.shields.io/github/languages/top/DictateurMiro/reverse-shell">
   <img src="https://img.shields.io/github/last-commit/DictateurMiro/reverse-shell">
   <img src="https://img.shields.io/github/stars/DictateurMiro/reverse-shell?color=7F9DE0&label=Stars">
