@@ -3,6 +3,7 @@
 
 <p align='center'>
   <b>Star ⭐ if you want more</b><br>
+<i>(English READM.md <a href="">here</a>)</i>
 </p>
 
 <p align="center">
