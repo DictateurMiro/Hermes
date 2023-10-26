@@ -3,14 +3,14 @@
 
 <p align='center'>
   <b>Star ⭐ if you want more</b><br>
-<i>(English READM.md <a href="">here</a>)</i>
+<i>(English READM.md <a href="https://github.com/DictateurMiro/reverse-shell/blob/main/English-README.md">here</a>)</i>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/languages/top/DictateurMiro/reverse-shell">
-  <img src="https://img.shields.io/github/last-commit/DictateurMiro/reverse-shell">
-  <img src="https://img.shields.io/github/stars/DictateurMiro/reverse-shell?color=7F9DE0&label=Stars">
-  <img src="https://img.shields.io/github/forks/DictateurMiro/reverse-shell?color=7F9DE0&label=Forks">
+  <img src="https://img.shields.io/github/languages/top/DictateurMiro/reverse-shell?color=red&style=flat">
+  <img src="https://img.shields.io/github/last-commit/DictateurMiro/reverse-shell?color=red&style=flat">
+  <img src="https://img.shields.io/github/stars/DictateurMiro/reverse-shell?color=red&style=flat&label=Stars">
+  <img src="https://img.shields.io/github/forks/DictateurMiro/reverse-shell?color=red&style=flat&label=Forks">
 </p>
 
 ---
