@@ -3,14 +3,14 @@
 
 <p align='center'>
   <b>Star ⭐ if you want more</b><br>
-<i>(English READM.md <a href="">here</a>)</i>
+<i>(READM.md Français<a href="https://github.com/DictateurMiro/reverse-shell/blob/main/README.md">ici</a>)</i>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/languages/top/DictateurMiro/reverse-shell">
-  <img src="https://img.shields.io/github/last-commit/DictateurMiro/reverse-shell">
-  <img src="https://img.shields.io/github/stars/DictateurMiro/reverse-shell?color=7F9DE0&label=Stars">
-  <img src="https://img.shields.io/github/forks/DictateurMiro/reverse-shell?color=7F9DE0&label=Forks">
+  <img src="https://img.shields.io/github/languages/top/DictateurMiro/reverse-shell?color=red&style=flat">
+  <img src="https://img.shields.io/github/last-commit/DictateurMiro/reverse-shell?color=red&style=flat">
+  <img src="https://img.shields.io/github/stars/DictateurMiro/reverse-shell?color=red&style=flat&label=Stars">
+  <img src="https://img.shields.io/github/forks/DictateurMiro/reverse-shell?color=red&style=flat&label=Forks">
 </p>
 
 ---
@@ -34,7 +34,7 @@ Contact :
 ```
 ---
 
-## ✨ Fonctionnement d'un Reverse Shell
+## ✨ How a Reverse Shell works (English version soon ...)
 <img src="https://raw.githubusercontent.com/DictateurMiro/reverse-shell/main/images/fonctionnement%20reverse%20shell.png">
 
 ---
@@ -67,15 +67,15 @@ Contact :
 ## 🎭 Useful command
 
 ```
-- echo %cd% ||| Équivalent à 'pwd' sur Unix pour savoir dans quel dossier vous êtes
-- cd .. && mkdir reverse ||| '&&' Permet d'exécuter une commande puis une autre, exemple 'cd ..' permet d'aller un dossier en arrière puis de créer un dossier.
-- type file.txt ||| Équivalent à 'cat' sur Unix pour voir le contenu d'un fichier texte.
-- echo "salut" >> salut.txt ||| Permet d'écrire "salut" dans un fichier qui va être appelé "salut.txt".
-- tasklist ||| Permet de voir toutes les proccess en cours avec leur nom et leur PID 
-- taskkill /F /PID [PID] ||| Permet de quitter un process via le PID
+- echo %cd% ||| Equivalent to 'pwd' on Unix to find out which folder you're in
+- cd .. && mkdir reverse ||| '&&' Allows you to execute one command and then another, e.g. 'cd ..' allows you to go one folder back and then create a new folder.
+- type file.txt ||| Equivalent to 'cat' on Unix to view the contents of a text file.
+- echo "hello" >> hello.txt ||| Writes "hello" to a file called "hello.txt".
+- tasklist ||| Displays all current proccesses with their name and PID 
+- taskkill /F /PID [PID] ||| Used to exit a process via the PID
 
-- upload [Chemin d'accès] ||| Permet d'envoyer un fichier sur le pc de la victime (Exemple: upload C:\Users\Miro\Desktop\token.py)
-- download [Chemin d'accès] ||| Permet de récupérer un fichier du pc de la victime (Exemple: download C:\Users\Victime\Documents\motdepasse.txt)
+- upload [path] ||| Sends a file to the victim's PC (Example: upload C:\Users\Miro\Desktop\token.py)
+- download [path] ||| Recovers a file from the victim's PC (Example: download C:\Users\Victime\Documents\motdepasse.txt)
 ```
 
 ---
