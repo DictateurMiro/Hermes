@@ -3,7 +3,7 @@
 
 <p align='center'>
   <b>Star ⭐ if you want more</b><br>
-<i>(READM.md Français<a href="https://github.com/DictateurMiro/reverse-shell/blob/main/README.md">ici</a>)</i>
+<i>(READM.md Français <a href="https://github.com/DictateurMiro/reverse-shell/blob/main/README.md">ici</a>)</i>
 </p>
 
 <p align="center">
